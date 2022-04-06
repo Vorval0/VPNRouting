@@ -1,1 +1,4 @@
-curl -s https://api.bgpview.io/ip/13.107.42.14 | jq-win64.exe '.data.prefixes[].asn.asn' | tr -d '\r' | xargs -I % curl -s https://api.bgpview.io/asn/%/prefixes | jq-win64.exe '.data.ipv4_prefixes[].prefix'
+set -e
+set -o pipefail
+
+curl --fail -s https://api.bgpview.io/ip/13.107.42.14 | jq '.data.prefixes[].asn.asn' | xargs -I % curl --fail -s https://api.bgpview.io/asn/%/prefixes | jq '.data.ipv4_prefixes[].prefix'
