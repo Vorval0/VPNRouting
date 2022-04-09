@@ -1,0 +1,1 @@
+./networks.sh  `cat domains.txt  | tr '\n' ' '` | awk '{print "ip route " $1 " 192.168.6.1 auto"}' > command.txt
