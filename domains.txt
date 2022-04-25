@@ -7,7 +7,6 @@ abs.twimg.com
 api.twitter.com
 abs-0.twimg.com
 
-tiktok.com
 mon-va.byteoversea.com
 mcs-sg.tiktok.com
 
