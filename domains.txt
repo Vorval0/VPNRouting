@@ -17,4 +17,4 @@ flibusta.is
 meduza.io
 www.unian.net
 
-strava.com
+amazonaws.com
